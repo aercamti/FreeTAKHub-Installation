@@ -11,7 +11,8 @@ set -o nounset
 set -o pipefail
 
 # This disables Apt's "restart services" interactive dialog
-export DEBIAN_FRONTEND=noninteractive
+# TI: left out this due to https://github.com/FreeTAKTeam/FreeTAKHub-Installation/issues/126 
+# export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_SUSPEND=1
 NEEDRESTART=
 
